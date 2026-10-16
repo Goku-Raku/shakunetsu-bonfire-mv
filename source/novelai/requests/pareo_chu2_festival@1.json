@@ -1,0 +1,78 @@
+{
+  "input": "2girls, japanese summer festival, night, food stall, paper lantern, warm lighting, bokeh, takoyaki, feeding, eating, casual clothes, happy, comedic, masterpiece, best quality, very aesthetic, absurdres, anime coloring, cel shading, vibrant colors, cinematic lighting, detailed background, no text",
+  "model": "nai-diffusion-4-5-full",
+  "action": "generate",
+  "parameters": {
+    "params_version": 4,
+    "width": 1344,
+    "height": 768,
+    "scale": 5.5,
+    "sampler": "k_euler_ancestral",
+    "steps": 23,
+    "n_samples": 1,
+    "seed": 2370258766,
+    "ucPreset": 0,
+    "qualityToggle": false,
+    "sm": false,
+    "sm_dyn": false,
+    "dynamic_thresholding": false,
+    "legacy": false,
+    "legacy_v3_extend": false,
+    "cfg_rescale": 0,
+    "noise_schedule": "karras",
+    "negative_prompt": "lowres, worst quality, bad quality, displeasing, very displeasing, jpeg artifacts, scan artifacts, chromatic aberration, artistic error, bad anatomy, bad hands, extra fingers, missing fingers, fused fingers, extra arms, extra legs, 3d, realistic, photorealistic, render, cgi, text, english text, japanese text, logo, signature, watermark, username, multiple views, blurry, kanji, writing, sign text",
+    "v4_prompt": {
+      "caption": {
+        "base_caption": "2girls, japanese summer festival, night, food stall, paper lantern, warm lighting, bokeh, takoyaki, feeding, eating, casual clothes, happy, comedic, masterpiece, best quality, very aesthetic, absurdres, anime coloring, cel shading, vibrant colors, cinematic lighting, detailed background, no text",
+        "char_captions": [
+          {
+            "char_caption": "girl, nyubara reona, bang dream!, very long hair, twintails, multicolored hair, pink hair, aqua hair, blunt bangs, red eyes, white cardigan, purple t-shirt, pink skirt, holding takoyaki, offering food, open mouth smile",
+            "centers": [
+              {
+                "x": 0.5,
+                "y": 0.5
+              }
+            ]
+          },
+          {
+            "char_caption": "girl, tamade chiyu, bang dream!, petite, long hair, pink hair, ahoge, aqua eyes, headphones around neck, black hoodie, black shorts, cheek bulge, eating, blush, looking away",
+            "centers": [
+              {
+                "x": 0.8,
+                "y": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "use_coords": true,
+      "use_order": true
+    },
+    "v4_negative_prompt": {
+      "caption": {
+        "base_caption": "lowres, worst quality, bad quality, displeasing, very displeasing, jpeg artifacts, scan artifacts, chromatic aberration, artistic error, bad anatomy, bad hands, extra fingers, missing fingers, fused fingers, extra arms, extra legs, 3d, realistic, photorealistic, render, cgi, text, english text, japanese text, logo, signature, watermark, username, multiple views, blurry, kanji, writing, sign text",
+        "char_captions": [
+          {
+            "char_caption": "",
+            "centers": [
+              {
+                "x": 0.5,
+                "y": 0.5
+              }
+            ]
+          },
+          {
+            "char_caption": "",
+            "centers": [
+              {
+                "x": 0.8,
+                "y": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "legacy_uc": false
+    }
+  }
+}

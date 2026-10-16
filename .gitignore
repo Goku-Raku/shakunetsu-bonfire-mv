@@ -1,0 +1,49 @@
+# ───────── 版權素材（不公開，請自行合法取得）─────────
+# 歌曲音檔
+*.flac
+*.mp3
+*.wav
+*.m4a
+# 官方歌詞（LRC 與 MV 內使用的歌詞文字）
+*.lrc
+bonfire-mv/src/mv/data/lyrics.json
+# 官方角色立繪與服裝參考圖
+source/角色參考/
+
+# ───────── 憑證 ─────────
+tools/novelai/.private/
+tools/novelai/.test-private/
+.env
+.env.*
+
+# ───────── 依賴與輸出 ─────────
+node_modules/
+bonfire-mv/out/
+bonfire-mv/build/
+bonfire-mv/.agents/
+bonfire-mv/.claude/
+bonfire-mv/skills-lock.json
+*.log
+.DS_Store
+Thumbs.db
+
+# ───────── 工作檔（大量試作、審片截圖、與 MV 無關的實驗）─────────
+# NovelAI 每次生成的原始輸出與沒選上的版本（選用的 20 張在 bonfire-mv/public/images）
+source/novelai/2026*/
+source/novelai/picked/
+source/novelai/picked_v2/
+source/novelai/MV圖片總覽*.jpg
+# 第一版 GPT Image 2 圖片（最終沒有使用）
+source/gpt-image2備份/
+# 審片截圖（畫面上有歌詞）
+source/review/
+# 製作過程的工作筆記（含大量歌詞引用；整理後的版本在 docs/）
+source/MV分鏡表.md
+source/MV素材需求清單.md
+source/MV圖片提示詞_GPT-Image-2.md
+source/MV圖片提示詞_NovelAI.md
+source/RAISE_A_SUILEN_樂團角色人設與CP指南.md
+# 另一個畫風重繪實驗（沒有用在 MV）
+novelai-restyle/
+# 與本專案無關的 skill 打包輸出
+outputs/

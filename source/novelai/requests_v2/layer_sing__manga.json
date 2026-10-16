@@ -1,0 +1,40 @@
+{
+  "input": "1girl, solo, wakana rei, bang dream!, long hair, dark brown hair, parted bangs, forehead, purple eyes, freckles, mature, black cropped jacket with flame orange trim, open jacket, black sports bra, midriff, gold chain necklace, black choker, high-waist black flared pants, belt chain, black mini top hat with orange ribbon, star earrings, upper body, close-up, singing, holding microphone, eyes half-closed, sweat, firelight from below, embers, depth of field, face on right side of frame, manga, monochrome, greyscale, spot color, orange spot color, screentones, halftone, ink, bold lineart, speed lines, dynamic angle, masterpiece, best quality, very aesthetic, absurdres, no text",
+  "model": "nai-diffusion-4-5-full",
+  "action": "generate",
+  "parameters": {
+    "params_version": 4,
+    "width": 1344,
+    "height": 768,
+    "scale": 5.5,
+    "sampler": "k_euler_ancestral",
+    "steps": 23,
+    "n_samples": 1,
+    "seed": 3814017353,
+    "ucPreset": 0,
+    "qualityToggle": false,
+    "sm": false,
+    "sm_dyn": false,
+    "dynamic_thresholding": false,
+    "legacy": false,
+    "legacy_v3_extend": false,
+    "cfg_rescale": 0,
+    "noise_schedule": "karras",
+    "negative_prompt": "lowres, worst quality, bad quality, displeasing, very displeasing, jpeg artifacts, scan artifacts, chromatic aberration, artistic error, bad anatomy, bad hands, extra fingers, missing fingers, fused fingers, extra arms, extra legs, 3d, realistic, photorealistic, render, cgi, text, english text, japanese text, logo, signature, watermark, username, multiple views, blurry",
+    "v4_prompt": {
+      "caption": {
+        "base_caption": "1girl, solo, wakana rei, bang dream!, long hair, dark brown hair, parted bangs, forehead, purple eyes, freckles, mature, black cropped jacket with flame orange trim, open jacket, black sports bra, midriff, gold chain necklace, black choker, high-waist black flared pants, belt chain, black mini top hat with orange ribbon, star earrings, upper body, close-up, singing, holding microphone, eyes half-closed, sweat, firelight from below, embers, depth of field, face on right side of frame, manga, monochrome, greyscale, spot color, orange spot color, screentones, halftone, ink, bold lineart, speed lines, dynamic angle, masterpiece, best quality, very aesthetic, absurdres, no text",
+        "char_captions": []
+      },
+      "use_coords": false,
+      "use_order": true
+    },
+    "v4_negative_prompt": {
+      "caption": {
+        "base_caption": "lowres, worst quality, bad quality, displeasing, very displeasing, jpeg artifacts, scan artifacts, chromatic aberration, artistic error, bad anatomy, bad hands, extra fingers, missing fingers, fused fingers, extra arms, extra legs, 3d, realistic, photorealistic, render, cgi, text, english text, japanese text, logo, signature, watermark, username, multiple views, blurry",
+        "char_captions": []
+      },
+      "legacy_uc": false
+    }
+  }
+}

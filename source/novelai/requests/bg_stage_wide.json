@@ -1,0 +1,40 @@
+{
+  "input": "scenery, night, outdoor stage, music festival, concert, stage lights, spotlight, light beams, pink light, cyan light, haze, pyrotechnics, stage fire, huge crowd, crowd silhouette, raised hands, glowstick, from behind audience, wide shot, tiny band on distant stage, masterpiece, best quality, very aesthetic, absurdres, anime coloring, cel shading, vibrant colors, cinematic lighting, detailed background, no text",
+  "model": "nai-diffusion-4-5-full",
+  "action": "generate",
+  "parameters": {
+    "params_version": 4,
+    "width": 1344,
+    "height": 768,
+    "scale": 5.5,
+    "sampler": "k_euler_ancestral",
+    "steps": 23,
+    "n_samples": 1,
+    "seed": 1542156019,
+    "ucPreset": 0,
+    "qualityToggle": false,
+    "sm": false,
+    "sm_dyn": false,
+    "dynamic_thresholding": false,
+    "legacy": false,
+    "legacy_v3_extend": false,
+    "cfg_rescale": 0,
+    "noise_schedule": "karras",
+    "negative_prompt": "lowres, worst quality, bad quality, displeasing, very displeasing, jpeg artifacts, scan artifacts, chromatic aberration, artistic error, bad anatomy, bad hands, extra fingers, missing fingers, fused fingers, extra arms, extra legs, 3d, realistic, photorealistic, render, cgi, text, english text, japanese text, logo, signature, watermark, username, multiple views, blurry",
+    "v4_prompt": {
+      "caption": {
+        "base_caption": "scenery, night, outdoor stage, music festival, concert, stage lights, spotlight, light beams, pink light, cyan light, haze, pyrotechnics, stage fire, huge crowd, crowd silhouette, raised hands, glowstick, from behind audience, wide shot, tiny band on distant stage, masterpiece, best quality, very aesthetic, absurdres, anime coloring, cel shading, vibrant colors, cinematic lighting, detailed background, no text",
+        "char_captions": []
+      },
+      "use_coords": false,
+      "use_order": true
+    },
+    "v4_negative_prompt": {
+      "caption": {
+        "base_caption": "lowres, worst quality, bad quality, displeasing, very displeasing, jpeg artifacts, scan artifacts, chromatic aberration, artistic error, bad anatomy, bad hands, extra fingers, missing fingers, fused fingers, extra arms, extra legs, 3d, realistic, photorealistic, render, cgi, text, english text, japanese text, logo, signature, watermark, username, multiple views, blurry",
+        "char_captions": []
+      },
+      "legacy_uc": false
+    }
+  }
+}

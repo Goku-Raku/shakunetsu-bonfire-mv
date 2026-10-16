@@ -1,0 +1,132 @@
+{
+  "input": "5girls, multiple girls, rock band, concert, live performance, outdoor stage, night, music festival, stage lights, light beams, pyrotechnics, fire pillars, sparks, from below, wide shot, full body, energetic, masterpiece, best quality, very aesthetic, absurdres, anime coloring, cel shading, vibrant colors, cinematic lighting, detailed background, no text",
+  "model": "nai-diffusion-4-5-full",
+  "action": "generate",
+  "parameters": {
+    "params_version": 4,
+    "width": 1344,
+    "height": 768,
+    "scale": 5.5,
+    "sampler": "k_euler_ancestral",
+    "steps": 23,
+    "n_samples": 1,
+    "seed": 2454763534,
+    "ucPreset": 0,
+    "qualityToggle": false,
+    "sm": false,
+    "sm_dyn": false,
+    "dynamic_thresholding": false,
+    "legacy": false,
+    "legacy_v3_extend": false,
+    "cfg_rescale": 0,
+    "noise_schedule": "karras",
+    "negative_prompt": "lowres, worst quality, bad quality, displeasing, very displeasing, jpeg artifacts, scan artifacts, chromatic aberration, artistic error, bad anatomy, bad hands, extra fingers, missing fingers, fused fingers, extra arms, extra legs, 3d, realistic, photorealistic, render, cgi, text, english text, japanese text, logo, signature, watermark, username, multiple views, blurry",
+    "v4_prompt": {
+      "caption": {
+        "base_caption": "5girls, multiple girls, rock band, concert, live performance, outdoor stage, night, music festival, stage lights, light beams, pyrotechnics, fire pillars, sparks, from below, wide shot, full body, energetic, masterpiece, best quality, very aesthetic, absurdres, anime coloring, cel shading, vibrant colors, cinematic lighting, detailed background, no text",
+        "char_captions": [
+          {
+            "char_caption": "girl, asahi rokka, bang dream!, long hair, grey-blue hair, green eyes, hairclip, black choker, chain necklace, black vest, black crop top, fingerless gloves, black shorts, fishnet thighhighs, blue electric guitar, playing guitar, open mouth",
+            "centers": [
+              {
+                "x": 0.1,
+                "y": 0.5
+              }
+            ]
+          },
+          {
+            "char_caption": "girl, satou masuki, bang dream!, short hair, blonde hair, yellow eyes, forehead, sharp eyes, black shirt, cropped shirt, cleavage cutout, midriff, fingerless gloves, black pants, see-through skirt, drumsticks, playing drums, drum set, sitting behind drums",
+            "centers": [
+              {
+                "x": 0.3,
+                "y": 0.3
+              }
+            ]
+          },
+          {
+            "char_caption": "girl, wakana rei, bang dream!, long hair, dark brown hair, parted bangs, forehead, purple eyes, freckles, black choker, black crop top, see-through sleeves, purple straps, black cargo pants, red electric bass guitar, singing, microphone stand, playing bass guitar",
+            "centers": [
+              {
+                "x": 0.5,
+                "y": 0.5
+              }
+            ]
+          },
+          {
+            "char_caption": "girl, nyubara reona, bang dream!, very long hair, twintails, multicolored hair, pink hair, aqua hair, streaked hair, blunt bangs, red eyes, small black hat, black leather vest, red shirt, midriff, fingerless gloves, playing keyboard instrument, synthesizer, smile",
+            "centers": [
+              {
+                "x": 0.7,
+                "y": 0.5
+              }
+            ]
+          },
+          {
+            "char_caption": "girl, tamade chiyu, bang dream!, petite, long hair, pink hair, ahoge, aqua eyes, cat ear headphones, black headphones, black choker, purple off-shoulder shirt, black crop top, black shorts, thigh strap, dj, turntable, arm up",
+            "centers": [
+              {
+                "x": 0.9,
+                "y": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "use_coords": true,
+      "use_order": true
+    },
+    "v4_negative_prompt": {
+      "caption": {
+        "base_caption": "lowres, worst quality, bad quality, displeasing, very displeasing, jpeg artifacts, scan artifacts, chromatic aberration, artistic error, bad anatomy, bad hands, extra fingers, missing fingers, fused fingers, extra arms, extra legs, 3d, realistic, photorealistic, render, cgi, text, english text, japanese text, logo, signature, watermark, username, multiple views, blurry",
+        "char_captions": [
+          {
+            "char_caption": "",
+            "centers": [
+              {
+                "x": 0.1,
+                "y": 0.5
+              }
+            ]
+          },
+          {
+            "char_caption": "",
+            "centers": [
+              {
+                "x": 0.3,
+                "y": 0.3
+              }
+            ]
+          },
+          {
+            "char_caption": "",
+            "centers": [
+              {
+                "x": 0.5,
+                "y": 0.5
+              }
+            ]
+          },
+          {
+            "char_caption": "",
+            "centers": [
+              {
+                "x": 0.7,
+                "y": 0.5
+              }
+            ]
+          },
+          {
+            "char_caption": "",
+            "centers": [
+              {
+                "x": 0.9,
+                "y": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "legacy_uc": false
+    }
+  }
+}
