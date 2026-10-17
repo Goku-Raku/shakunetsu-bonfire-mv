@@ -8,6 +8,7 @@
 | --- | --- |
 | 人（Gokuraku） | 企劃方向、提供素材（音檔、歌詞、角色資料）、每一輪審片與修改意見、最終取捨 |
 | Claude（Anthropic，透過 Claude Code） | 分鏡設計、全部 Remotion 程式、音訊分析腳本、NovelAI 提示詞、圖片挑選與去背、文件 |
+| OpenAI Codex | 參與編寫本地 NovelAI 接入工具（`tools/novelai/`）、離線測試與使用文件 |
 | NovelAI Diffusion Anime V4.5 Full | 生成 20 張角色與場景圖 |
 
 全片經過十多輪「看片 → 文字回饋 → 修改」的迭代，回饋大多是像「1:27 的字出現早了一點」「剪影歸位要更有力量感」這種具體描述，再由 AI 對照音訊分析與抽影格去修正。
@@ -17,10 +18,13 @@
 | 名稱 | 用途 | 備註 |
 | --- | --- | --- |
 | Claude（Anthropic） | 企劃、程式、分析、文件 | 透過 Claude Code 在本機操作專案、執行指令、抽影格檢查畫面 |
+| OpenAI Codex | 本地 NovelAI 接入工具的程式與文件協作 | PowerShell API 接入、遮罩 Token 設定介面、Windows DPAPI 憑證保存、單張文生圖／圖生圖與離線測試；見 [工具說明](../tools/novelai/README.md) |
 | NovelAI Diffusion Anime V4.5 Full（`nai-diffusion-4-5-full`） | 角色與場景圖 | 經 `tools/novelai/NovelAI.ps1` 呼叫官方 API；參數見 [ASSETS.md](ASSETS.md) |
 | GPT Image 2 | 第一版草圖 | 畫風太偏 3D，最後沒有採用，圖片也不在 repo 裡 |
 
 ## 圖片製作
+
+本 repo 已收錄由 OpenAI Codex 參與編寫的本地 NovelAI plugin／API 接入工具。程式、請求範例與離線測試位於 [`tools/novelai/`](../tools/novelai/)；使用者須自行設定帳號憑證，加密 Token 檔不納入 Git。
 
 1. **角色鎖定**：對照官方立繪，把每位成員的辨識特徵寫成固定標籤（髮色、瞳色、髮型），服裝另外寫成 MV 專用的「Bonfire」舞台裝標籤，兩者分開組合。
 2. **畫風測試**：同一組提示詞試了官方風、扁平圖像、漫畫網點、90 年代復古、塗鴉龐克、粗線條動畫等畫風，最後選粗線條、高對比的龐克動畫風（`--style bold`）。

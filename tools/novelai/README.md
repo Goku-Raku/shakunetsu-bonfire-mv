@@ -1,8 +1,10 @@
 # NovelAI 本機接入
 
+這是隨灼熱 Bonfire! MV repo 一起提供的專案本地 plugin／API 接入工具，由 **OpenAI Codex 參與編寫程式、離線測試與使用文件**。以 Windows PowerShell 5.1 執行，下載或複製本 repo 後即可依下列步驟設定；不需要安裝共用 Skill 或 MCP。
+
 這個工具使用你的 NovelAI 帳號，透過官方 API 檢查訂閱、按要求生成單張圖片。設定工具不會生圖。
 
-訂閱查詢與圖片生成皆使用 `https://image.novelai.net`，與目前官方前端一致。本次對舊主 API 網址查詢訂閱回 HTTP 400，服務要求改用圖片 API；修正網址後，原 Token 已通過驗證，不需要重新產生。
+訂閱查詢與圖片生成皆使用 `https://image.novelai.net`。每位使用者須自行設定及驗證帳號 Token；repo 不包含憑證。
 
 ## 取得與保存 Token
 
@@ -37,12 +39,12 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\tools\novelai\NovelAI.
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\tools\novelai\NovelAI.ps1 -Action Generate -RequestFile .\tools\novelai\request.example.json -Execute
 ```
 
-圖片與參數記錄預設保存到 `F:\ai影片\灼熱bonfire mv\source\novelai\時間-隨機碼\`，不覆寫已有圖片。預覽會顯示 `output_directory`，可先確認位置。單次只產生一張，無背景排程或自動重試。若生成逾時，先核對網站用量再重試，避免重複扣額。
+圖片與參數記錄預設保存到本 repo 的 `source/novelai/時間-隨機碼/`，不覆寫已有圖片。路徑會依工具所在位置解析，不需要使用作者的磁碟路徑。預覽會顯示 `output_directory`，可先確認位置。單次只產生一張，無背景排程或自動重試。若生成逾時，先核對網站用量再重試，避免重複扣額。
 
 `-OutputDirectory` 是這個腳本的參數，不能單獨貼到 PowerShell 執行。如需當次另選位置，請使用完整指令（以下只預覽，不生圖）：
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "F:\ai影片\灼熱bonfire mv\tools\novelai\NovelAI.ps1" -Action Generate -OutputDirectory "F:\ai影片\灼熱bonfire mv\source\novelai"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\tools\novelai\NovelAI.ps1" -Action Generate -RequestFile ".\tools\novelai\request.example.json" -OutputDirectory ".\source\novelai"
 ```
 
 只有明確要求實際生成時，才在完整指令末尾加上 `-Execute`；也請先用 `-RequestFile` 指向這次已準備好的提示詞請求檔。
@@ -75,7 +77,7 @@ PNG 輸出不代表模型保留了透明背景。立繪的 alpha 和人物輪廓
 - `Test-Local.ps1` 使用隔離資料夾、假 Token 與模擬回應測試 Windows 加密、受限存取權限、備份、參數檢查與 PNG 儲存，不讀真實 Token、不連網。
 - `Test-Img2Img.ps1` 不讀任何憑證並直接替換網路函式，離線檢查來源 PNG、大小和尺寸、參數限制、V4 正負提示詞同步、預覽不洩露 base64、保存與重放、文生圖回歸及失敗不重試。這些測試不代表已通過真實圖生圖服務驗證。
 - API 帳號驗證須在正常 Windows 使用者環境下執行。受限代理環境可能阻擋 DPAPI 或網路，這時應透過正式權限核准執行同一工具。
-- 2026-10-17 已完成此帳號的真實唯讀訂閱驗證：連線成功、訂閱有效。尚未送出實際生圖請求；生圖參數與圖片輸出仍須以首次生成結果確認。
+- 離線測試結果不代表你的帳號已通過 API 驗證，也不代表已完成真實圖片生成。訂閱狀態請用 `-Action Check` 確認；生成能力與圖片輸出須以實際執行結果確認。
 
 官方參考：
 

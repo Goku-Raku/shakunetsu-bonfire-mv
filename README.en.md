@@ -13,6 +13,16 @@ A fan-made music video for RAISE A SUILEN's "灼熱 Bonfire!" (Shakunetsu Bonfir
 | ![Boot](docs/images/01_boot.jpg) | ![Member card](docs/images/03_member_card.jpg) |
 | ![Headbang section](docs/images/04_headbang.jpg) | ![Instrument solo](docs/images/05_solo.jpg) |
 
+## Video and cover downloads
+
+The original video files and covers are available on [Google Drive](https://drive.google.com/drive/folders/1ye92bp0qG8TD5KNhDEJbyr9OYFZ7i0_q?usp=drive_link):
+
+- **Covers**: 2:3 and 3:4 aspect ratios.
+- **4K60 video**: 3840 × 2160, 60 fps.
+- **1080p30 video**: 1920 × 1080, 30 fps.
+
+The editable Remotion source is in this repository under `bonfire-mv/`.
+
 ## Highlights
 
 - **Music-driven timeline**: audio analysis measured 155 BPM, the first downbeat, the heavy hits and vocal onsets. Cuts land on bar lines and lyrics appear when they are actually sung.
@@ -70,6 +80,8 @@ Requires Node.js 20.19+ / 22.13+ / 24+ and an internet connection (fonts load fr
 
 ## Regenerating the images
 
+The project-local NovelAI plugin/adapter is bundled under [`tools/novelai/`](tools/novelai/README.md). It runs in Windows PowerShell 5.1, with development and documentation contributions from OpenAI Codex. See the linked guide for setup and usage.
+
 Images were generated with NovelAI Diffusion Anime V4.5 Full. You need your own NovelAI account and Persistent API Token.
 
 1. Set up the token following [tools/novelai/README.md](tools/novelai/README.md) (stored locally, encrypted with Windows DPAPI).
@@ -91,6 +103,7 @@ Each generation costs NovelAI Anlas (about 11–12 Anlas per 1-megapixel image i
 | Video engine | Remotion 4.0.536, React 19, TypeScript |
 | Character and scene images | NovelAI Diffusion Anime V4.5 Full |
 | Planning, storyboard, code, audio analysis, docs | Claude (Anthropic), via Claude Code |
+| Local NovelAI adapter development and documentation | OpenAI Codex |
 | Audio analysis | Python, NumPy, Remotion's bundled FFmpeg |
 | Background removal | Python, Pillow |
 | Fonts | Dela Gothic One, Zen Kaku Gothic New, Anton, Share Tech Mono (all SIL Open Font License) |
@@ -109,3 +122,4 @@ See [docs/AI_TOOLS.md](docs/AI_TOOLS.md) for the production workflow and analysi
 - Original song: RAISE A SUILEN, "灼熱 Bonfire!"
 - The BanG Dream! project
 - Direction and review: Gokuraku
+- OpenAI Codex participated in developing the local NovelAI adapter and documenting it.

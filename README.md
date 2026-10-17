@@ -13,6 +13,15 @@
 | ![開機](docs/images/01_boot.jpg) | ![成員卡](docs/images/03_member_card.jpg) |
 | ![甩頭段](docs/images/04_headbang.jpg) | ![間奏](docs/images/05_solo.jpg) |
 
+## 影片與封面下載
+
+[Google Drive：影片原始檔與封面](https://drive.google.com/drive/folders/1ye92bp0qG8TD5KNhDEJbyr9OYFZ7i0_q?usp=drive_link)
+
+- **封面**：2:3 與 3:4 兩種比例。
+- **影片**：4K60（3840 × 2160、60fps）與 1080p30（1920 × 1080、30fps）兩個版本。
+
+可編輯的 Remotion 專案原始碼收錄於本 repo；影片與封面檔案由上述雲盤提供。
+
 ## 特色
 
 - **跟著音樂走的時間軸**：用音訊分析量出 155 BPM、第一拍位置、重擊與人聲起音，鏡頭切在小節線上，歌詞在實際唱到時出現。
@@ -70,9 +79,11 @@
 
 ## 重新生成圖片
 
+本 repo 已附上由 **OpenAI Codex 參與編寫**的本地 NovelAI plugin／API 接入工具，位於 [`tools/novelai/`](tools/novelai/)。它以 Windows PowerShell 5.1 執行，包含 Token 設定介面、訂閱查詢、單張文生圖／圖生圖、請求範例與離線測試；使用方式見 [工具說明](tools/novelai/README.md)。
+
 圖片用 NovelAI Diffusion Anime V4.5 Full 生成，需要自己的 NovelAI 帳號與 Persistent API Token。
 
-1. 依 [tools/novelai/README.md](tools/novelai/README.md) 設定 Token（以 Windows DPAPI 加密保存在本機，不會寫進檔案）。
+1. 依 [tools/novelai/README.md](tools/novelai/README.md) 設定 Token（以 Windows DPAPI 加密保存在本機，憑證檔已排除於 Git 追蹤之外）。
 2. 修改 `source/novelai/scripts/nai2.py` 開頭的 `ROOT` 路徑後執行，例如：
    ```bash
    python source/novelai/scripts/nai2.py --style bold group_stage@1
@@ -91,6 +102,7 @@
 | 影片引擎 | Remotion 4.0.536、React 19、TypeScript |
 | 角色與場景圖 | NovelAI Diffusion Anime V4.5 Full |
 | 企劃、分鏡、程式、音訊分析、文件 | Claude（Anthropic），透過 Claude Code 協作 |
+| 本地 NovelAI 接入工具的程式與文件協作 | OpenAI Codex |
 | 音訊分析 | Python、NumPy、Remotion 內建的 FFmpeg |
 | 去背 | Python、Pillow |
 | 字型 | Dela Gothic One、Zen Kaku Gothic New、Anton、Share Tech Mono（皆為 SIL Open Font License） |
@@ -109,3 +121,4 @@
 - 原曲：RAISE A SUILEN〈灼熱 Bonfire!〉
 - 《BanG Dream!》企劃
 - 企劃與審片：Gokuraku
+- 本地 NovelAI 接入工具與使用文件：OpenAI Codex 參與編寫

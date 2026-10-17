@@ -13,6 +13,16 @@ RAISE A SUILEN「灼熱 Bonfire!」のファンメイド MV です。[Remotion](
 | ![起動](docs/images/01_boot.jpg) | ![メンバーカード](docs/images/03_member_card.jpg) |
 | ![ヘドバンパート](docs/images/04_headbang.jpg) | ![間奏ソロ](docs/images/05_solo.jpg) |
 
+## 動画・カバー画像のダウンロード
+
+動画ファイル・カバー画像は [Google Drive](https://drive.google.com/drive/folders/1ye92bp0qG8TD5KNhDEJbyr9OYFZ7i0_q?usp=drive_link) からダウンロードできます。
+
+- **カバー画像**：2:3 と 3:4 の2種類。
+- **4K60 動画**：3840 × 2160、60fps。
+- **1080p30 動画**：1920 × 1080、30fps。
+
+編集可能な Remotion のソースコードは、このリポジトリの `bonfire-mv/` に収録しています。
+
 ## 特徴
 
 - **音楽に合わせたタイムライン**：音声解析で 155 BPM、1 拍目の位置、キメ、歌い出しを測定。カットは小節線に、歌詞は実際に歌われた瞬間に出ます。
@@ -70,6 +80,8 @@ Node.js 20.19+ / 22.13+ / 24+ とインターネット接続（フォントを G
 
 ## 画像の再生成
 
+本プロジェクト用のローカル NovelAI プラグイン／アダプターを [`tools/novelai/`](tools/novelai/README.md) に同梱しています。Windows PowerShell 5.1 で実行でき、OpenAI Codex が開発とドキュメント作成に参加しました。設定方法と使い方はリンク先のガイドをご覧ください。
+
 画像は NovelAI Diffusion Anime V4.5 Full で生成しました。ご自身の NovelAI アカウントと Persistent API Token が必要です。
 
 1. [tools/novelai/README.md](tools/novelai/README.md) に従ってトークンを設定します（Windows DPAPI で暗号化してローカルに保存）。
@@ -91,6 +103,7 @@ Node.js 20.19+ / 22.13+ / 24+ とインターネット接続（フォントを G
 | 映像エンジン | Remotion 4.0.536、React 19、TypeScript |
 | キャラクター・背景画像 | NovelAI Diffusion Anime V4.5 Full |
 | 企画、絵コンテ、コード、音声解析、ドキュメント | Claude（Anthropic）、Claude Code を使用 |
+| ローカル NovelAI アダプターの開発・ドキュメント作成 | OpenAI Codex |
 | 音声解析 | Python、NumPy、Remotion 同梱の FFmpeg |
 | 切り抜き | Python、Pillow |
 | フォント | Dela Gothic One、Zen Kaku Gothic New、Anton、Share Tech Mono（いずれも SIL Open Font License） |
@@ -109,3 +122,4 @@ Node.js 20.19+ / 22.13+ / 24+ とインターネット接続（フォントを G
 - 原曲：RAISE A SUILEN「灼熱 Bonfire!」
 - 『BanG Dream!』プロジェクト
 - 企画・チェック：Gokuraku
+- OpenAI Codex：ローカル NovelAI アダプターの開発とドキュメント作成に参加。
